@@ -1,0 +1,85 @@
+
+:root{
+    --vivo:green;
+    --muerto:red;
+    --desconocido: gray;
+    --bgstatuscolor: #a7a7ee;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo{
+    width: 600px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo{
+        width: 300px;
+    }
+    
+    
+}
+
+header{
+    background-image: url('./assets/img/background-page.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.data-status{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    background-color: var(--bgstatuscolor);
+    width: 100px;
+    height: 17px;
+    align-items: center;
+    padding: .5rem;
+}
+
+.status{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px;
+    padding: 20px;
+}
+
+.location-card{
+    padding: 30px;
+    margin: 30px;
+    background-color: #047808;
+    box-shadow: 2px 2px 8px rgb(0, 0, 0, 0.3);
+    display:grid;
+    border-radius: 10px;
+    place-content: center;
+}
+
+h3{
+    text-transform: uppercase;
+
+ }
+
+ .buscador{
+    padding: 20px;
+    margin: 30px;
+ }
